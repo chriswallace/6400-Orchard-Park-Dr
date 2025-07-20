@@ -1,0 +1,24 @@
+{
+  "name": "6400-orchard-park-dr",
+  "version": "1.0.0",
+  "description": "Marketing website for 6400 Orchard Park Dr, McKinney, TX",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": ["real-estate", "home", "marketing", "mckinney", "texas"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.0"
+  }
+} 
