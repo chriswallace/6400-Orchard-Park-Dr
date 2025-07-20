@@ -87,7 +87,7 @@ In your GitHub repository settings:
 3. Choose **main** branch and **/ (root)** folder
 4. GitHub Pages will serve from the `dist/index.html` file
 
-The site will be available at: `https://[username].github.io/[repository-name]/`
+The site will be available at: `https://bestmckinneyhome.com` (custom domain) or `https://[username].github.io/[repository-name]/`
 
 2. Preview the built site:
 

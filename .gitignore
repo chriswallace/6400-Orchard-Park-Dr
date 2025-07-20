@@ -24,5 +24,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Keep dist folder for GitHub Pages deployment
-# dist/ 
+# Build output - dist folder (contents are copied to root for GitHub Pages)
+dist/
+
+# But keep the root assets and compiled index.html for GitHub Pages
+!assets/
+!index.html 
