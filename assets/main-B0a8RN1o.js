@@ -3077,7 +3077,7 @@ const eo = {
     {
       id: 38,
       caption:
-        "Situated at one of the highest point in McKinney, the home offers stunning views of the city and surrounding areas",
+        "Situated at one of the highest points in McKinney, the home offers stunning views of the city and surrounding areas",
       alt: "Property view 38",
     },
     {

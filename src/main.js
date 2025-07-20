@@ -71,18 +71,18 @@ const imageGallery = {
     },
     {
       id: 19,
-      caption: "Champagne gold accents and custom above/below cabinet lighting",
+      caption:
+        "Champagne gold accents and custom cabinet lighting accent this bright, airy kitchen",
       alt: "Property view 19",
     },
     {
       id: 20,
-      caption: "Brand new dishwasher recently installed",
+      caption: "Brand new dishwasher and island recently added",
       alt: "Property view 20",
     },
     {
       id: 21,
-      caption:
-        "Gorgeous white cabinets and white tile backsplash are always in style",
+      caption: "Crisp white cabinets with matching tile backsplash",
       alt: "Property view 21",
     },
     {
@@ -212,7 +212,7 @@ const imageGallery = {
     {
       id: 38,
       caption:
-        "Situated at one of the highest point in McKinney, the home offers stunning views of the city and surrounding areas",
+        "Situated at one of the highest points in McKinney, the home offers stunning views of the city and surrounding areas",
       alt: "Property view 38",
     },
     {
