@@ -23,7 +23,7 @@ const imageGallery = {
     {
       id: 34,
       caption:
-        "Entering the home, you're greeted by a large dining room and staircase with 25-foot ceilings",
+        "Entering the home, you're greeted by a large dining room and staircase with high ceilings",
       alt: "Property view 34",
     },
     {
