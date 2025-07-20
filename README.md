@@ -50,6 +50,45 @@ The website will open automatically at `http://localhost:3000`.
 npm run build
 ```
 
+### Deployment to GitHub Pages
+
+This site is configured for deployment to GitHub Pages. The compiled files in the `dist/` folder are committed to the repository.
+
+#### Quick Deploy
+
+Use the deploy script to build and push changes:
+
+```bash
+npm run deploy
+```
+
+This will:
+
+1. Build the project with `npm run build`
+2. Add the updated `dist/` folder to git
+3. Commit with a deployment message
+4. Push to the repository
+
+#### Manual Deployment
+
+If you prefer manual deployment:
+
+1. Build the project: `npm run build`
+2. Add the dist folder: `git add dist/`
+3. Commit the changes: `git commit -m "Update compiled files"`
+4. Push to GitHub: `git push`
+
+#### GitHub Pages Setup
+
+In your GitHub repository settings:
+
+1. Go to **Settings** → **Pages**
+2. Under **Source**, select "Deploy from a branch"
+3. Choose **main** branch and **/ (root)** folder
+4. GitHub Pages will serve from the `dist/index.html` file
+
+The site will be available at: `https://[username].github.io/[repository-name]/`
+
 2. Preview the built site:
 
 ```bash
