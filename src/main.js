@@ -43,6 +43,54 @@ const imageGallery = {
       alt: "Property view 37",
     },
     {
+      id: 14,
+      caption:
+        "Large living room with large windows to the outdoor living space",
+      alt: "Property view 14",
+    },
+    {
+      id: 15,
+      caption: "Open-concept floor plan allows for easy entertaining",
+      alt: "Property view 15",
+    },
+    {
+      id: 16,
+      caption: "Floor-to-ceiling fireplace",
+      alt: "Property view 16",
+    },
+    {
+      id: 17,
+      caption:
+        "A stunning custom island with granite countertops is the heart of the home",
+      alt: "Property view 17",
+    },
+    {
+      id: 18,
+      caption: "Hardwood flooring was recently extended into the kitchen",
+      alt: "Property view 18",
+    },
+    {
+      id: 19,
+      caption: "Champagne gold accents and custom above/below cabinet lighting",
+      alt: "Property view 19",
+    },
+    {
+      id: 20,
+      caption: "Brand new dishwasher recently installed",
+      alt: "Property view 20",
+    },
+    {
+      id: 21,
+      caption:
+        "Gorgeous white cabinets and white tile backsplash are always in style",
+      alt: "Property view 21",
+    },
+    {
+      id: 22,
+      caption: "Beautiful nature views from the eat-in kitchen",
+      alt: "Property view 22",
+    },
+    {
       id: 6,
       caption: "Primary bedroom with cathedral-style vaulted ceiling",
       alt: "Property view 6",
@@ -94,53 +142,6 @@ const imageGallery = {
       id: 5,
       caption: "Large ensuite bathroom with tile shower and tub",
       alt: "Property view 5",
-    },
-    {
-      id: 14,
-      caption: "Large living room with large windows to the backyard",
-      alt: "Property view 14",
-    },
-    {
-      id: 15,
-      caption: "Open-concept floor plan allows for easy entertaining",
-      alt: "Property view 15",
-    },
-    {
-      id: 16,
-      caption: "Floor-to-ceiling fireplace",
-      alt: "Property view 16",
-    },
-    {
-      id: 17,
-      caption:
-        "Stunning custom island with granite countertops and stainless steel appliances",
-      alt: "Property view 17",
-    },
-    {
-      id: 18,
-      caption: "Hardwood flooring was recently extended into the kitchen",
-      alt: "Property view 18",
-    },
-    {
-      id: 19,
-      caption: "Brand new island, sink, and faucet",
-      alt: "Property view 19",
-    },
-    {
-      id: 20,
-      caption: "Brand new dishwasher recently installed",
-      alt: "Property view 20",
-    },
-    {
-      id: 21,
-      caption:
-        "Gorgeous white cabinets and white tile backsplash are always in style",
-      alt: "Property view 21",
-    },
-    {
-      id: 22,
-      caption: "Beautiful nature views from the eat-in kitchen",
-      alt: "Property view 22",
     },
     {
       id: 23,
@@ -195,43 +196,43 @@ const imageGallery = {
     },
     {
       id: 43,
-      caption: "Image 43 - Property view of 6400 Orchard Park Dr",
+      caption: "Brand new flagstone patio for outdoor living",
       alt: "Property view 43",
     },
     {
       id: 44,
-      caption: "Image 44 - Property view of 6400 Orchard Park Dr",
+      caption: "Stay cool with two built-in ceiling fans",
       alt: "Property view 44",
     },
     {
       id: 45,
-      caption: "Image 45 - Property view of 6400 Orchard Park Dr",
+      caption: "A large, private backyard",
       alt: "Property view 45",
     },
     {
       id: 38,
       caption:
-        "Situated at the tallest point of McKinney, the home offers stunning views of the city and surrounding areas",
+        "Situated at the highest point in McKinney, the home offers stunning views of the city and surrounding areas",
       alt: "Property view 38",
     },
     {
       id: 39,
-      caption: "",
+      caption: "Full brick side elevation and HOA-maintained fence",
       alt: "Property view 39",
     },
     {
       id: 40,
-      caption: "",
+      caption: "Newer roof installed 5 years ago",
       alt: "Property view 40",
     },
     {
       id: 41,
-      caption: "",
+      caption: "Quiet cul-de-sac, perfect for kids and pets",
       alt: "Property view 41",
     },
     {
       id: 42,
-      caption: "",
+      caption: "Wrapped in the heart of luxury and nature in Stonebridge Ranch",
       alt: "Property view 42",
     },
     {
@@ -249,8 +250,8 @@ const imageGallery = {
     },
     {
       id: "golf-course",
-      caption: "Stonebridge Ranch 27-hole championship golf course",
-      alt: "Stonebridge Ranch 27-hole championship golf course",
+      caption: "27 holes of championship golf at your fingertips",
+      alt: "27 holes of championship golf at your fingertips",
       customUrl:
         "https://ik.imagekit.io/UltraDAO/6400/sbr_golf_golfcourse_21_1920_1200.jpg",
     },
@@ -270,15 +271,15 @@ const imageGallery = {
     },
     {
       id: "adriatica",
-      caption: "Adriatica Village",
-      alt: "Adriatica Village",
+      caption: "Adriatica Village is just a five-minute walk away",
+      alt: "Adriatica Village is just a five-minute walk away",
       customUrl:
         "https://ik.imagekit.io/UltraDAO/6400/Stonebridge-Ranch-Neighborhood.jpg",
     },
     {
       id: "tennis-courts",
-      caption: "Stonebridge Tennis Courts",
-      alt: "Stonebridge Tennis Courts",
+      caption: "HOA-maintained Tennis Courts just around the corner",
+      alt: "HOA-maintained Tennis Courts just around the corner",
       customUrl: "https://ik.imagekit.io/UltraDAO/6400/maxresdefault.jpg",
     },
   ],
@@ -465,11 +466,27 @@ Alpine.data("imageGallery", () => ({
 // Navigation scroll effect
 Alpine.data("navigation", () => ({
   scrolled: false,
+  mobileMenuOpen: false,
 
   init() {
     window.addEventListener("scroll", () => {
       this.scrolled = window.scrollY > 50;
     });
+  },
+
+  toggleMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+    // Prevent body scroll when mobile menu is open
+    if (this.mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  },
+
+  closeMobileMenu() {
+    this.mobileMenuOpen = false;
+    document.body.style.overflow = "auto";
   },
 }));
 
