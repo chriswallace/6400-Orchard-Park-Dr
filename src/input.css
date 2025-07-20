@@ -40,7 +40,7 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-400 to-primary-700 bg-clip-text text-transparent;
   }
   
   .image-overlay {
