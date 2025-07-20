@@ -23,7 +23,7 @@ const imageGallery = {
     {
       id: 34,
       caption:
-        "Entering the home, you're greeted by a large dining room and staircase with 30-foot ceilings",
+        "Entering the home, you're greeted by a large dining room and staircase with 25-foot ceilings",
       alt: "Property view 34",
     },
     {
@@ -212,7 +212,7 @@ const imageGallery = {
     {
       id: 38,
       caption:
-        "Situated at the highest point in McKinney, the home offers stunning views of the city and surrounding areas",
+        "Situated at one of the highest point in McKinney, the home offers stunning views of the city and surrounding areas",
       alt: "Property view 38",
     },
     {
